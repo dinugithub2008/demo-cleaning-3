@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #071827;
+  --brand-blue: #0877c9;
+  --brand-navy: #07233a;
+  --brand-cyan: #2ac8d4;
+  --brand-pink: #ec1f72;
+  --soft-blue: #edf7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-pad {
+  padding-block: clamp(4rem, 8vw, 7.5rem);
+}
+
+.container-x {
+  width: min(1180px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.tile-grid {
+  background-color: #0877c9;
+  background-image:
+    linear-gradient(rgba(2, 42, 72, 0.26) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 42, 72, 0.26) 1px, transparent 1px),
+    radial-gradient(circle at 50% 30%, rgba(42, 200, 212, 0.72), rgba(8, 119, 201, 0.26) 36%, transparent 62%);
+  background-size: 62px 62px, 62px 62px, 100% 100%;
+}
+
+.pink-grid {
+  background-color: #ec1f72;
+  background-image:
+    linear-gradient(rgba(132, 20, 73, 0.22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(132, 20, 73, 0.22) 1px, transparent 1px),
+    radial-gradient(circle at 70% 40%, rgba(255, 221, 91, 0.38), transparent 34%);
+  background-size: 62px 62px, 62px 62px, 100% 100%;
+}
+
+.soft-shadow {
+  box-shadow: 0 22px 70px rgba(7, 24, 39, 0.12);
+}
+
+.angled-card {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.shine {
+  position: relative;
+}
+
+.shine::after {
+  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.52), transparent 80%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-80%);
+  transition: opacity 0.25s ease, transform 0.7s ease;
+}
+
+.shine:hover::after {
+  opacity: 1;
+  transform: translateX(80%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
