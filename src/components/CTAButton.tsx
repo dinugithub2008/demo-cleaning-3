@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties, MouseEventHandler, ReactNode } from "react";
 import { ArrowUpRight } from "lucide-react";
 
 type CTAButtonProps = {
@@ -6,9 +6,10 @@ type CTAButtonProps = {
   href: string;
   variant?: "primary" | "secondary" | "light";
   className?: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 };
 
-export function CTAButton({ children, href, variant = "primary", className = "" }: CTAButtonProps) {
+export function CTAButton({ children, href, variant = "primary", className = "", onClick }: CTAButtonProps) {
   const styles: Record<NonNullable<CTAButtonProps["variant"]>, { className: string; style: CSSProperties }> = {
     primary: {
       className: "shadow-lg shadow-pink-700/20 hover:brightness-95",
@@ -28,6 +29,7 @@ export function CTAButton({ children, href, variant = "primary", className = "" 
     <a
       className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-black transition duration-200 ${styles[variant].className} ${className}`}
       href={href}
+      onClick={onClick}
       style={styles[variant].style}
     >
       {children}

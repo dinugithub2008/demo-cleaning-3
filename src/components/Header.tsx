@@ -1,10 +1,19 @@
 "use client";
 
-import { Menu, Phone, X } from "lucide-react";
+import { Mail, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { business, navItems } from "@/data/siteContent";
+import { FacebookIcon, InstagramIcon, WhatsAppIcon } from "./BrandIcons";
 import { CTAButton } from "./CTAButton";
 import { Logo } from "./Logo";
+
+const contactActions = [
+  { label: "Call ClearSiteCo", href: business.phoneHref, icon: Phone, className: "text-[#0877c9]" },
+  { label: "Email ClearSiteCo", href: `mailto:${business.email}`, icon: Mail, className: "text-[#ec1f72]" },
+  { label: "Message ClearSiteCo on WhatsApp", href: business.whatsappHref, icon: WhatsAppIcon, className: "text-[#25d366]" },
+  { label: "Follow ClearSiteCo on Instagram", href: business.instagramHref, icon: InstagramIcon, className: "text-[#dd2a7b]" },
+  { label: "Follow ClearSiteCo on Facebook", href: business.facebookHref, icon: FacebookIcon, className: "text-[#1877f2]" },
+];
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -23,7 +32,22 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <CTAButton href="#quote">Request Site Quote</CTAButton>
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2 py-1 shadow-sm">
+            {contactActions.map((action) => {
+              const Icon = action.icon;
+              return (
+                <a
+                  aria-label={action.label}
+                  className={`grid size-10 place-items-center rounded-full transition hover:bg-[#edf7ff] hover:text-[#071827] ${action.className}`}
+                  href={action.href}
+                  key={action.label}
+                >
+                  <Icon className="size-[18px]" />
+                </a>
+              );
+            })}
+          </div>
+          <CTAButton href="#quote-form">Request Site Quote</CTAButton>
         </div>
 
         <button
@@ -35,6 +59,22 @@ export function Header() {
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
+      </div>
+
+      <div className="container-x grid grid-cols-5 gap-2 pb-3 lg:hidden">
+        {contactActions.map((action) => {
+          const Icon = action.icon;
+          return (
+            <a
+              aria-label={action.label}
+              className={`inline-flex min-h-10 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm transition hover:bg-[#edf7ff] hover:text-[#071827] ${action.className}`}
+              href={action.href}
+              key={action.label}
+            >
+              <Icon className="size-[18px]" />
+            </a>
+          );
+        })}
       </div>
 
       {open ? (
@@ -51,10 +91,11 @@ export function Header() {
               </a>
             ))}
             <div className="mt-3 grid gap-3">
-              <CTAButton href="#quote">Request Site Quote</CTAButton>
+              <CTAButton href="#quote-form" onClick={() => setOpen(false)}>Request Site Quote</CTAButton>
               <a
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-5 py-3 text-sm font-bold text-slate-900"
                 href={business.phoneHref}
+                onClick={() => setOpen(false)}
               >
                 <Phone className="size-4 text-[#0877c9]" />
                 Call Now

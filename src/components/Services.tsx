@@ -1,4 +1,4 @@
-import { coreServices, primaryServices } from "@/data/siteContent";
+import { primaryServices } from "@/data/siteContent";
 import { CTAButton } from "./CTAButton";
 import { SectionHeading } from "./SectionHeading";
 
@@ -49,21 +49,8 @@ export function Services() {
           })}
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {coreServices.map((service) => {
-            const Icon = service.icon;
-            return (
-              <article className="rounded-[1.4rem] bg-[#f7fbff] p-6 transition duration-200 hover:-translate-y-1 hover:bg-[#edf7ff]" key={service.title}>
-                <Icon className="size-8 text-[#0877c9]" />
-                <h3 className="mt-5 text-lg font-black text-[#071827]">{service.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{service.detail}</p>
-              </article>
-            );
-          })}
-        </div>
-
         <div className="mt-10 text-center">
-          <CTAButton href="#quote" variant="secondary">Discuss Your Site</CTAButton>
+          <CTAButton href="#quote-form" variant="secondary">Discuss Your Site</CTAButton>
         </div>
       </div>
     </section>

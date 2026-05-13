@@ -20,7 +20,7 @@ export function Hero() {
                 ClearSiteCo delivers detailed builders cleans, commercial gym facility cleaning, strata cleaning and vacate handovers across Sydney.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <CTAButton href="#quote">Request Site Quote</CTAButton>
+                <CTAButton href="#quote-form">Request Site Quote</CTAButton>
                 <CTAButton href={business.phoneHref} variant="light">Call Now</CTAButton>
               </div>
             </div>

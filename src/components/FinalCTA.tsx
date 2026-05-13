@@ -1,13 +1,42 @@
-import { Phone } from "lucide-react";
+"use client";
+
+import { Check, ChevronDown, Phone } from "lucide-react";
+import { type FormEvent, useEffect, useRef, useState } from "react";
 import { business } from "@/data/siteContent";
-import { CTAButton } from "./CTAButton";
+
+const serviceOptions = [
+  "Post-Construction Cleaning",
+  "Commercial Gym Cleaning",
+  "Strata Cleaning",
+  "End of Lease Cleaning",
+];
 
 export function FinalCTA() {
+  const [service, setService] = useState("");
+  const [serviceOpen, setServiceOpen] = useState(false);
+  const [serviceError, setServiceError] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function closeOnOutsideClick(event: MouseEvent) {
+      if (!dropdownRef.current?.contains(event.target as Node)) {
+        setServiceOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", closeOnOutsideClick);
+
+    return () => document.removeEventListener("mousedown", closeOnOutsideClick);
+  }, []);
+
+  const fieldClass =
+    "min-h-12 w-full rounded-2xl border border-slate-200 bg-white px-4 text-sm font-semibold text-[#071827] outline-none transition placeholder:text-slate-400 focus:border-[#0877c9] focus:ring-4 focus:ring-[#0877c9]/12";
+
   return (
     <section className="bg-white pb-16" id="quote">
       <div className="container-x">
-        <div className="tile-grid overflow-hidden rounded-[2rem] p-8 text-white lg:p-14">
-          <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+        <div className="tile-grid overflow-hidden rounded-[2rem] p-6 text-white sm:p-8 lg:p-12">
+          <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.16em] text-white/78">Need a site-ready finish?</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
@@ -16,17 +45,123 @@ export function FinalCTA() {
               <p className="mt-4 max-w-2xl text-white/82">
                 Send the site type, location, deadline and scope. We will recommend the right cleaning plan for construction, gym, strata or vacate work.
               </p>
-            </div>
-            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <CTAButton href={`mailto:${business.email}`} variant="light">Request Site Quote</CTAButton>
               <a
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white bg-white px-6 py-3 text-sm font-black text-[#071827] shadow-lg shadow-slate-950/10 transition hover:brightness-95"
+                className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-[#071827] px-6 py-3 text-sm font-black text-white shadow-lg shadow-slate-950/20 transition hover:brightness-110"
                 href={business.phoneHref}
               >
-                <Phone className="size-4 text-[#0877c9]" />
+                <Phone className="size-4 text-[#2ac8d4]" />
                 Call Now
               </a>
             </div>
+            <form
+              action={`mailto:${business.email}`}
+              className="rounded-[1.5rem] bg-white p-5 text-[#071827] shadow-2xl shadow-slate-950/20 sm:p-6"
+              encType="text/plain"
+              id="quote-form"
+              method="post"
+              onSubmit={(event: FormEvent<HTMLFormElement>) => {
+                if (!service) {
+                  event.preventDefault();
+                  setServiceError(true);
+                  setServiceOpen(true);
+                }
+              }}
+            >
+              <div className="grid gap-3 sm:grid-cols-2">
+                <label className="sr-only" htmlFor="quote-name">Name</label>
+                <input className={fieldClass} id="quote-name" name="Name" placeholder="Your name*" required />
+
+                <label className="sr-only" htmlFor="quote-phone">Phone</label>
+                <input className={fieldClass} id="quote-phone" name="Phone" placeholder="Phone number*" required type="tel" />
+
+                <label className="sr-only" htmlFor="quote-email">Email</label>
+                <input className={fieldClass} id="quote-email" name="Email" placeholder="Your email*" required type="email" />
+
+                <label className="sr-only" htmlFor="quote-service">Service</label>
+                <div className="relative" ref={dropdownRef}>
+                  <input name="Service" required type="hidden" value={service} />
+                  <button
+                    aria-expanded={serviceOpen}
+                    aria-haspopup="listbox"
+                    aria-invalid={serviceError}
+                    className={`${fieldClass} flex items-center justify-between gap-3 text-left ${
+                      serviceError ? "border-[#ec1f72] ring-4 ring-[#ec1f72]/12" : serviceOpen ? "border-[#0877c9] ring-4 ring-[#0877c9]/12" : ""
+                    } ${service ? "" : "text-slate-400"}`}
+                    id="quote-service"
+                    onKeyDown={(event) => {
+                      if (event.key === "ArrowDown" || event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        setServiceOpen(true);
+                      }
+
+                      if (event.key === "Escape") {
+                        setServiceOpen(false);
+                      }
+                    }}
+                    onPointerDown={(event) => {
+                      event.preventDefault();
+                      setServiceOpen((value) => !value);
+                    }}
+                    type="button"
+                  >
+                    <span className="truncate">{service || "Type of service*"}</span>
+                    <ChevronDown className={`size-4 shrink-0 text-[#0877c9] transition ${serviceOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {serviceOpen ? (
+                    <div
+                      aria-labelledby="quote-service"
+                      className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-30 overflow-hidden rounded-2xl border border-slate-200 bg-white p-1 shadow-2xl shadow-slate-950/14"
+                      role="listbox"
+                    >
+                      {serviceOptions.map((option) => {
+                        const selected = service === option;
+                        return (
+                          <button
+                            aria-selected={selected}
+                            className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm font-bold transition ${
+                              selected ? "bg-[#edf7ff] text-[#075f9f]" : "text-slate-700 hover:bg-slate-50 hover:text-[#071827]"
+                            }`}
+                            key={option}
+                            onClick={() => {
+                              setService(option);
+                              setServiceError(false);
+                              setServiceOpen(false);
+                            }}
+                            role="option"
+                            type="button"
+                          >
+                            <span>{option}</span>
+                            {selected ? <Check className="size-4 text-[#ec1f72]" /> : null}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : null}
+                  {serviceError ? <p className="mt-2 px-1 text-xs font-bold text-[#ec1f72]">Please choose a service.</p> : null}
+                </div>
+
+                <label className="sr-only" htmlFor="quote-location">Location</label>
+                <input className={fieldClass} id="quote-location" name="Location" placeholder="Suburb / site location" />
+
+                <label className="sr-only" htmlFor="quote-deadline">Deadline</label>
+                <input className={fieldClass} id="quote-deadline" name="Deadline" placeholder="Preferred date / deadline" />
+              </div>
+
+              <label className="sr-only" htmlFor="quote-message">Scope details</label>
+              <textarea
+                className={`${fieldClass} mt-3 min-h-32 resize-y py-3`}
+                id="quote-message"
+                name="Scope"
+                placeholder="Tell us about the site, access, timing and cleaning scope"
+              />
+
+              <button
+                className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#ec1f72] px-6 py-3 text-sm font-black text-white shadow-lg shadow-pink-700/20 transition hover:brightness-95"
+                type="submit"
+              >
+                Send Quote Request
+              </button>
+            </form>
           </div>
         </div>
       </div>

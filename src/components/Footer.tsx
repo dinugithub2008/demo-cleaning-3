@@ -1,11 +1,21 @@
-import { BriefcaseBusiness, Camera, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { business, footerLinks, socialLinks } from "@/data/siteContent";
+import { FacebookIcon, InstagramIcon } from "./BrandIcons";
 import { Logo } from "./Logo";
 
 const icons = {
-  Instagram: Camera,
-  Facebook: MessageCircle,
-  LinkedIn: BriefcaseBusiness,
+  Instagram: InstagramIcon,
+  Facebook: FacebookIcon,
+};
+
+const socialHrefs = {
+  Instagram: business.instagramHref,
+  Facebook: business.facebookHref,
+};
+
+const socialStyles = {
+  Instagram: "text-[#ff4fa3] hover:text-white",
+  Facebook: "text-[#8fc2ff] hover:text-white",
 };
 
 export function Footer() {
@@ -24,7 +34,12 @@ export function Footer() {
               {socialLinks.map((social) => {
                 const Icon = icons[social as keyof typeof icons];
                 return (
-                  <a aria-label={social} className="grid size-10 place-items-center rounded-full bg-white/16 transition hover:bg-white/24" href="#" key={social}>
+                  <a
+                    aria-label={social}
+                    className={`grid size-10 place-items-center rounded-full transition ${socialStyles[social as keyof typeof socialStyles]}`}
+                    href={socialHrefs[social as keyof typeof socialHrefs]}
+                    key={social}
+                  >
                     <Icon className="size-5" />
                   </a>
                 );
@@ -59,7 +74,6 @@ export function Footer() {
             <a href="#">Terms of Service</a>
           </div>
         </div>
-        <p className="mt-10 text-[clamp(3.1rem,13vw,10rem)] font-black leading-none text-white/95">site ready</p>
       </div>
     </footer>
   );

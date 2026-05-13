@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BeforeAfter } from "@/components/BeforeAfter";
+import { AboutUs } from "@/components/AboutUs";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Pricing } from "@/components/Pricing";
 import { Process } from "@/components/Process";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { ServiceAreas } from "@/components/ServiceAreas";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
@@ -38,9 +39,9 @@ export default function HomePage() {
       <main>
         <Hero />
         <TrustBadges />
+        <AboutUs />
         <Services />
         <WhyChooseUs />
-        <BeforeAfter />
         <Process />
         <ServiceAreas />
         <Testimonials />
@@ -48,6 +49,7 @@ export default function HomePage() {
         <FAQ />
         <FinalCTA />
       </main>
+      <ScrollToTop />
       <Footer />
     </>
   );

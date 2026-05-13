@@ -41,8 +41,8 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <CTAButton className="mt-8 w-full" href="#quote" variant={plan.featured ? "light" : "primary"}>
-                  Continue
+                <CTAButton className="mt-8 w-full" href="#quote-form" variant={plan.featured ? "light" : "primary"}>
+                  Request Quote
                 </CTAButton>
               </article>
             ))}

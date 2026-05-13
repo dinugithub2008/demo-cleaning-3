@@ -1,5 +1,4 @@
 import {
-  BadgeCheck,
   Building2,
   CalendarCheck,
   CheckCircle2,
@@ -8,17 +7,10 @@ import {
   Cone,
   Dumbbell,
   Factory,
-  FileCheck2,
   HardHat,
-  KeyRound,
   MapPin,
   ShieldCheck,
-  Sparkles,
-  SprayCan,
-  Star,
   TimerReset,
-  UsersRound,
-  Warehouse,
 } from "lucide-react";
 
 export const business = {
@@ -26,6 +18,9 @@ export const business = {
   phone: "02 8123 4588",
   phoneHref: "tel:+61281234588",
   email: "hello@clearsiteco.com.au",
+  whatsappHref: "https://wa.me/61281234588",
+  instagramHref: "https://www.instagram.com/",
+  facebookHref: "https://www.facebook.com/",
   address: "Sydney NSW",
   hours: "Mon-Sat 6:00am-7:00pm",
   rating: "4.9",
@@ -33,8 +28,8 @@ export const business = {
 };
 
 export const navItems = [
+  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Projects", href: "#results" },
   { label: "Process", href: "#process" },
   { label: "Packages", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -73,20 +68,11 @@ export const primaryServices = [
   {
     icon: Building2,
     title: "Strata & End of Lease Cleaning",
-    subtitle: "Property handovers and common areas",
+    subtitle: "Strata properties, common areas and vacate cleans",
     text: "Reliable cleaning solutions for strata properties, common areas, vacate cleans and property handovers with attention to detail and presentation.",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1100&q=82",
     tags: ["Common areas", "Vacate cleans", "Presentation"],
   },
-];
-
-export const coreServices = [
-  { icon: HardHat, title: "Post-Construction Cleaning", detail: "Residential, commercial and industrial sites" },
-  { icon: Dumbbell, title: "Commercial Gym Facility Cleaning", detail: "High-use equipment, amenities and floor zones" },
-  { icon: KeyRound, title: "Strata & Vacate Cleaning Services", detail: "Common areas, end-of-lease and handovers" },
-  { icon: Warehouse, title: "Industrial Presentation Cleans", detail: "Site-ready finishes for larger work areas" },
-  { icon: SprayCan, title: "Dust & Debris Removal", detail: "Fine dust, surface residue and builder waste clearing" },
-  { icon: FileCheck2, title: "Final Handover Cleaning", detail: "Detail-focused preparation for inspection" },
 ];
 
 export const reasons = [
@@ -211,7 +197,7 @@ export const footerLinks = {
   Company: ["Projects", "Process", "Service Areas", "FAQ"],
 };
 
-export const socialLinks = ["Instagram", "Facebook", "LinkedIn"];
+export const socialLinks = ["Instagram", "Facebook"];
 
 export const seoSchemas = {
   localBusiness: {
@@ -248,13 +234,6 @@ export const seoSchemas = {
     })),
   },
 };
-
-export const resultMetrics = [
-  { icon: Star, value: "98%", label: "handover quality focus" },
-  { icon: Sparkles, value: "3x", label: "specialist service streams" },
-  { icon: UsersRound, value: "24h", label: "quote response target" },
-  { icon: BadgeCheck, value: "100%", label: "scope checked before start" },
-];
 
 export const projectTypes = [
   { icon: Cone, label: "Builders cleans" },
