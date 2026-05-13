@@ -1,6 +1,7 @@
-import { ClipboardCheck, Cone, Dumbbell, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { business, heroStats, projectTypes } from "@/data/siteContent";
 import { CTAButton } from "./CTAButton";
+import { HeroSlider } from "./HeroSlider";
 
 export function Hero() {
   return (
@@ -39,39 +40,7 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="grid gap-5">
-          <div className="relative min-h-[360px] overflow-hidden rounded-[2rem] bg-slate-100 soft-shadow lg:min-h-[420px]">
-            <img
-              alt="Construction site prepared for final cleaning and handover"
-              className="h-full w-full object-cover"
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=84"
-            />
-            <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-white/94 p-4 shadow-xl backdrop-blur">
-              <div className="flex items-start gap-3">
-                <span className="grid size-11 shrink-0 place-items-center rounded-full bg-[#ec1f72] text-white">
-                  <ClipboardCheck className="size-5" />
-                </span>
-                <div>
-                  <p className="font-black text-[#071827]">Handover-ready finish</p>
-                  <p className="mt-1 text-sm leading-6 text-slate-600">Dust, debris, surfaces and presentation zones handled against the project scope.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="angled-card bg-[#071827] p-6 text-white">
-              <Cone className="size-9 text-[#2ac8d4]" />
-              <h2 className="mt-6 text-xl font-black">Builders cleans</h2>
-              <p className="mt-2 text-sm leading-6 text-white/75">Residential, commercial and industrial post-construction projects.</p>
-            </div>
-            <div className="angled-card bg-[#edf7ff] p-6 text-[#071827]">
-              <Dumbbell className="size-9 text-[#0877c9]" />
-              <h2 className="mt-6 text-xl font-black">Gym contracts</h2>
-              <p className="mt-2 text-sm leading-6 text-slate-600">Sanitised equipment, amenities and high-traffic facility presentation.</p>
-            </div>
-          </div>
-        </div>
+        <HeroSlider />
       </div>
 
       <div className="mt-5 grid gap-3 rounded-[1.5rem] border border-slate-200 bg-white p-3 shadow-sm sm:grid-cols-2 lg:grid-cols-6">

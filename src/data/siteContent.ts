@@ -41,6 +41,47 @@ export const heroStats = [
   { value: "180+", label: "projects and sites supported" },
 ];
 
+export const heroSlides = [
+  {
+    title: "Post-construction handover cleans",
+    text: "Detailed dust, debris, surfaces and final presentation cleaning for site-ready spaces.",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=86",
+  },
+  {
+    title: "Commercial facility presentation",
+    text: "Clean, polished commercial spaces prepared for staff, clients and inspections.",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=86",
+  },
+  {
+    title: "Gym and fitness cleaning",
+    text: "High-touch equipment, amenities, mirrors and traffic zones maintained to a commercial standard.",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=86",
+  },
+  {
+    title: "Strata and lease handovers",
+    text: "Common areas, vacate cleans and property presentation handled with practical detail.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=86",
+  },
+];
+
+export const heroServiceTiles = [
+  {
+    title: "Builders cleans",
+    text: "Residential, commercial and industrial post-construction projects.",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=84",
+  },
+  {
+    title: "Gym contracts",
+    text: "Sanitised equipment, amenities and high-traffic facility presentation.",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=84",
+  },
+  {
+    title: "Property handovers",
+    text: "Strata common areas, vacate cleans and inspection-ready finishes.",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=84",
+  },
+];
+
 export const trustBadges = [
   { icon: HardHat, title: "Construction Ready", text: "Detailed builders cleans, dust removal and final presentation." },
   { icon: Dumbbell, title: "Gym Hygiene Focus", text: "High-touch fitness equipment, amenities and floor areas." },
@@ -54,7 +95,7 @@ export const primaryServices = [
     title: "Post-Construction Cleaning",
     subtitle: "Residential, Commercial & Industrial projects",
     text: "Detailed builders cleans, handover cleans, dust removal, debris clearing, final presentation cleaning and site-ready finishes.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=82",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=84",
     tags: ["Builders cleans", "Handover cleans", "Dust removal"],
   },
   {
@@ -204,7 +245,7 @@ export const seoSchemas = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: business.name,
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=82",
+    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=84",
     telephone: business.phone,
     email: business.email,
     address: {
