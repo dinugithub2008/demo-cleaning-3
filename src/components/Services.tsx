@@ -8,8 +8,8 @@ export function Services() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Our services"
-          title="Specialist cleaning for projects, facilities and property handovers"
-          text="ClearSiteCo is intentionally focused: post-construction cleaning and commercial gym contracts lead the work, with strata and end-of-lease cleaning supporting recurring property needs."
+          title="Specialist cleaning for construction projects, commercial facilities and property handovers."
+          text="Clear Site Co. is specialised in post-construction cleaning, commercial fitness facility contracts, strata cleaning and end-of-lease cleaning across Sydney."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">

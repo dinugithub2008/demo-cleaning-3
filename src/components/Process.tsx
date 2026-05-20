@@ -7,7 +7,7 @@ export function Process() {
       <div className="container-x">
         <SectionHeading
           eyebrow="How it works"
-          title="A practical process for scoped commercial cleaning"
+          title="A structured process for scoped commercial cleaning"
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((item) => (

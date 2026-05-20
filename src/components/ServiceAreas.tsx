@@ -10,8 +10,8 @@ export function ServiceAreas() {
           <SectionHeading
             align="left"
             eyebrow="Service areas"
-            title="Local cleaning across Sydney and surrounding suburbs"
-            text="Our priority coverage includes homes, offices and managed properties across greater Sydney."
+            title="Specialist cleaning services across Sydney and surrounding suburbs"
+            text="Our priority coverage includes commercial sites, strata properties and managed facilities across greater Sydney."
           />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {locations.map((location) => (

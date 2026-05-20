@@ -12,13 +12,13 @@ export function Pricing() {
             <SectionHeading
               align="left"
               eyebrow="Packages"
-              title="Choose the right engagement model"
-              text="ClearSiteCo quotes by site scope, access and deadline. These packages frame the most common ways clients work with us."
+              title="Choose the right service structure"
+              text="Clear Site Co. quotes based on site scope, access and project deadlines. These service structures reflect the most common ways clients work with us."
             />
             <ul className="mt-8 grid gap-3 text-sm font-bold text-slate-800">
               <li className="flex items-center gap-2"><CheckCircle2 className="size-5 text-[#ec1f72]" /> Scope-first quoting</li>
               <li className="flex items-center gap-2"><CheckCircle2 className="size-5 text-[#ec1f72]" /> Site-aware scheduling</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="size-5 text-[#ec1f72]" /> Commercial presentation focus</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="size-5 text-[#ec1f72]" /> Commercial Presentation Standards</li>
             </ul>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">
@@ -42,7 +42,7 @@ export function Pricing() {
                   ))}
                 </ul>
                 <CTAButton className="mt-8 w-full" href="#quote-form" variant={plan.featured ? "light" : "primary"}>
-                  Request Quote
+                  Request a Scoped Quote
                 </CTAButton>
               </article>
             ))}

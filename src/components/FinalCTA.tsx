@@ -6,9 +6,9 @@ import { business } from "@/data/siteContent";
 
 const serviceOptions = [
   "Post-Construction Cleaning",
-  "Commercial Gym Cleaning",
+  "Commercial Fitness Facility Cleaning",
   "Strata Cleaning",
-  "End of Lease Cleaning",
+  "End of Lease Cleaning Services",
 ];
 
 export function FinalCTA() {
@@ -38,12 +38,12 @@ export function FinalCTA() {
         <div className="tile-grid overflow-hidden rounded-[2rem] p-6 text-white sm:p-8 lg:p-12">
           <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-white/78">Need a site-ready finish?</p>
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-white/78">Site-ready handover finishes</p>
               <h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
-                Bring ClearSiteCo in before handover, opening day or the next inspection.
+                Engage Clear Site Co. before handover, opening day, or final inspection.
               </h2>
               <p className="mt-4 max-w-2xl text-white/82">
-                Send the site type, location, deadline and scope. We will recommend the right cleaning plan for construction, gym, strata or vacate work.
+                Provide the site type, location, timeframe, and scope, and we’ll recommend the appropriate cleaning solution for construction, fitness facilities, strata, or vacate projects.
               </p>
               <a
                 className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-[#071827] px-6 py-3 text-sm font-black text-white shadow-lg shadow-slate-950/20 transition hover:brightness-110"

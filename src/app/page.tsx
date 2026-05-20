@@ -18,7 +18,7 @@ import { seoSchemas } from "@/data/siteContent";
 export const metadata: Metadata = {
   title: "Post-Construction, Gym & Strata Cleaning Sydney",
   description:
-    "ClearSiteCo provides post-construction cleaning, builders cleans, commercial gym facility cleaning, strata cleaning and end-of-lease handover cleaning across Sydney.",
+    "Clear Site Co. provides post-construction cleaning, builders cleans, commercial gym facility cleaning, strata cleaning and end-of-lease handover cleaning across Sydney.",
   alternates: {
     canonical: "/",
   },

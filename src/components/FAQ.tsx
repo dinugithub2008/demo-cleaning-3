@@ -17,7 +17,7 @@ export function FAQ() {
             <SectionHeading
               align="left"
               eyebrow="FAQ"
-              title="Questions? Look here."
+              title="Frequently Asked Questions"
               text={`Can't find an answer? Call us at ${business.phone} or email ${business.email}.`}
             />
             <div className="mt-8">

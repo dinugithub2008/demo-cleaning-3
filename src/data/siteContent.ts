@@ -14,15 +14,15 @@ import {
 } from "lucide-react";
 
 export const business = {
-  name: "ClearSiteCo",
-  phone: "02 8123 4588",
-  phoneHref: "tel:+61281234588",
-  email: "hello@clearsiteco.com.au",
-  whatsappHref: "https://wa.me/61281234588",
-  instagramHref: "https://www.instagram.com/",
+  name: "Clear Site Co.",
+  phone: "0466582296",
+  phoneHref: "tel:+61466582296",
+  email: "info@clearsiteco.com.au",
+  whatsappHref: "https://wa.me/61466582296",
+  instagramHref: "https://www.instagram.com/clearsiteco_?igsh=ZnBxaTBmdzd3bTNh",
   facebookHref: "https://www.facebook.com/",
   address: "Sydney NSW",
-  hours: "Mon-Sat 6:00am-7:00pm",
+  hours: "Mon-Sat 7:00am-7:00pm",
   rating: "4.9",
   reviewCount: "180+",
 };
@@ -44,23 +44,23 @@ export const heroStats = [
 export const heroSlides = [
   {
     title: "Post-construction handover cleans",
-    text: "Detailed dust, debris, surfaces and final presentation cleaning for site-ready spaces.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=86",
+    text: "Post-construction cleaning for residential and commercial projects, specialising in builders cleans, defect-sensitive finishing and residue removal, and final handover presentation cleaning.",
+    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
   {
     title: "Commercial facility presentation",
-    text: "Clean, polished commercial spaces prepared for staff, clients and inspections.",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=86",
+    text: "Clean, polished commercial spaces ready for staff, clients and inspections.",
+    image: "https://images.pexels.com/photos/33357392/pexels-photo-33357392.png?auto=compress&cs=tinysrgb&w=1400",
   },
   {
     title: "Gym and fitness cleaning",
-    text: "High-touch equipment, amenities, mirrors and traffic zones maintained to a commercial standard.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=86",
+    text: "High-touch equipment, amenities and mirrors, and high-traffic areas maintained to a commercial hygiene standard.",
+    image: "https://images.pexels.com/photos/19025672/pexels-photo-19025672.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
   {
     title: "Strata and lease handovers",
     text: "Common areas, vacate cleans and property presentation handled with practical detail.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=86",
+    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
 ];
 
@@ -68,17 +68,17 @@ export const heroServiceTiles = [
   {
     title: "Builders cleans",
     text: "Residential, commercial and industrial post-construction projects.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=84",
+    image: "https://images.pexels.com/photos/4176414/pexels-photo-4176414.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     title: "Gym contracts",
-    text: "Sanitised equipment, amenities and high-traffic facility presentation.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=84",
+    text: "Sanitised equipment, amenities and high-traffic areas maintained to a commercial presentation standard.",
+    image: "https://images.pexels.com/photos/19025672/pexels-photo-19025672.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     title: "Property handovers",
     text: "Strata common areas, vacate cleans and inspection-ready finishes.",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=84",
+    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
 ];
 
@@ -93,25 +93,25 @@ export const primaryServices = [
   {
     icon: Cone,
     title: "Post-Construction Cleaning",
-    subtitle: "Residential, Commercial & Industrial projects",
-    text: "Detailed builders cleans, handover cleans, dust removal, debris clearing, final presentation cleaning and site-ready finishes.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=84",
-    tags: ["Builders cleans", "Handover cleans", "Dust removal"],
+    subtitle: "Residential, commercial and industrial sites",
+    text: "Detailed builders cleans, handover cleans, debris removal, fine construction dust extraction and final presentation cleaning for site-ready handovers.",
+    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    tags: ["Builders cleans", "Handover cleans", "Post-construction cleaning"],
   },
   {
     icon: Dumbbell,
     title: "Commercial Cleaning",
-    subtitle: "Specialising in Gym & Fitness Facilities",
-    text: "High-traffic commercial cleaning with a focus on hygiene, presentation, equipment sanitisation, amenities and ongoing maintenance.",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=82",
-    tags: ["Gym contracts", "Amenities", "Equipment sanitisation"],
+    subtitle: "Specialising in commercial fitness facilities",
+    text: "High-traffic commercial cleaning focused on hygiene, presentation and equipment sanitisation.",
+    image: "https://images.pexels.com/photos/19025672/pexels-photo-19025672.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    tags: ["Commercial fitness contracts", "Equipment sanitisation", "High-traffic area cleaning"],
   },
   {
     icon: Building2,
     title: "Strata & End of Lease Cleaning",
-    subtitle: "Strata properties, common areas and vacate cleans",
-    text: "Reliable cleaning solutions for strata properties, common areas, vacate cleans and property handovers with attention to detail and presentation.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1100&q=82",
+    subtitle: "Strata properties, common areas and end-of-lease cleans.",
+    text: "Reliable cleaning for strata properties, common areas, end-of-lease cleans and property handovers with a focus on detail and presentation.",
+    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Common areas", "Vacate cleans", "Presentation"],
   },
 ];
@@ -119,41 +119,41 @@ export const primaryServices = [
 export const reasons = [
   {
     icon: ClipboardCheck,
-    title: "Scope-Led Cleaning Plans",
+    title: "Scope-Based Cleaning Contracts",
     text: "Each site starts with a practical scope: zones, access, deadline, presentation standard and priority defects.",
   },
   {
     icon: ShieldCheck,
     title: "Commercial Standards",
-    text: "Teams are briefed for high-traffic environments, safety-aware cleaning and site-sensitive communication.",
+    text: "Teams are briefed for high-traffic environments, with a strong focus on safety and clear site communication.",
   },
   {
     icon: TimerReset,
     title: "Built Around Handover Dates",
-    text: "We plan around builder deadlines, lease returns, gym operating hours and strata maintenance windows.",
+    text: "We coordinate around builder deadlines, lease returns, fitness facility operating hours and strata maintenance windows.",
   },
 ];
 
 export const processSteps = [
-  { step: "01", title: "Site Scope", text: "Share project type, size, deadline, access and cleaning priorities." },
-  { step: "02", title: "Clear Quote", text: "Receive a practical quote with inclusions, timing and optional extras." },
-  { step: "03", title: "Clean & Detail", text: "The team works through dust, debris, amenities, surfaces and presentation zones." },
-  { step: "04", title: "Handover Check", text: "Final review against the scope so the site is ready for inspection or use." },
+  { step: "01", title: "Site Scope", text: "Share project type, scope, size, deadline, access requirements and cleaning priorities." },
+  { step: "02", title: "Clear Quote", text: "Receive a clear, scoped quote with inclusions, timing and optional extras." },
+  { step: "03", title: "Clean & Detail", text: "The team works through dust, debris, amenities, fixtures and presentation areas." },
+  { step: "04", title: "Handover Check", text: "Final review against the scope to ensure the site is ready for inspection or handover." },
 ];
 
 export const locations = [
   "Sydney",
   "Parramatta",
-  "Blacktown",
-  "Castle Hill",
-  "Kellyville",
-  "Rouse Hill",
-  "Baulkham Hills",
-  "Bella Vista",
-  "Norwest",
-  "Penrith",
-  "Liverpool",
-  "Bankstown",
+  "Burwood",
+  "Rhodes",
+  "Strathfield",
+  "Five Dock",
+  "Chatswood",
+  "North Sydney",
+  "St Leonards",
+  "Macquire Park",
+  "Ryde",
+  "Cronulla",
 ];
 
 export const testimonials = [
@@ -182,59 +182,59 @@ export const testimonials = [
 
 export const packages = [
   {
-    name: "Site Reset",
+    name: "Site Readiness",
     eyebrow: "Post-construction",
     price: "Quoted by scope",
-    text: "For builders cleans, defect-period dust removal and pre-handover presentation.",
-    features: ["Dust and debris clearing", "Surface and fixture detail", "Glass and wet area focus", "Final presentation clean"],
+    text: "For builders cleans, defect-stage cleaning and pre-handover presentation.",
+    features: ["Dust and debris removal | Fixture and finish detailing | Glass and wet area cleaning | Handover presentation standard"],
   },
   {
-    name: "GymCare Contract",
-    eyebrow: "Commercial gyms",
-    price: "Weekly plans",
-    text: "For ongoing fitness facility cleaning with hygiene and member presentation at the centre.",
-    features: ["Equipment sanitisation", "Amenities and change rooms", "Floor and mirror maintenance", "After-hours scheduling"],
+    name: "Commercial Fitness Cleaning Contract",
+    eyebrow: "Commercial fitness facilities",
+    price: "Scheduled cleaning contracts",
+    text: "Ongoing fitness facility cleaning focused on hygiene, equipment sanitisation and presentation standards.",
+    features: ["Equipment sanitisation | Amenities and change room servicing | Floor and mirror maintenance | Flexible after-hours scheduling"],
     featured: true,
   },
   {
-    name: "Property Handover",
-    eyebrow: "Strata and lease",
+    name: "Handover Readiness",
+    eyebrow: "Strata and end-of-lease cleaning",
     price: "Custom quote",
-    text: "For strata common areas, vacate cleaning and property handover presentation.",
-    features: ["Common area cleaning", "Vacate checklist support", "Entry and corridor detail", "Flexible recurring options"],
+    text: "For strata common areas, end-of-lease cleaning and handover presentation.",
+    features: ["Strata common area cleaning", "End-of-lease support", "Entry and corridor detailing", "Scheduled maintenance contracts"],
   },
 ];
 
 export const faqs = [
   {
-    question: "What does ClearSiteCo specialise in?",
+    question: "What does Clear Site Co. specialise in?",
     answer:
-      "ClearSiteCo focuses on post-construction cleaning, commercial gym and fitness facility cleaning, and strata or end-of-lease cleaning.",
+      "Clear Site Co specialises in post-construction cleaning, commercial fitness facility cleaning, and strata and end-of-lease cleaning services.",
   },
   {
     question: "Do you handle residential, commercial and industrial construction cleans?",
     answer:
-      "Yes. We support residential, commercial and industrial post-construction projects, including builders cleans, handover cleans, dust removal and final presentation cleaning.",
+      "Yes. We support residential, commercial and industrial post-construction projects, including builders cleans, defect-stage cleaning, dust and debris removal, and handover presentation standards.",
   },
   {
-    question: "Can you clean gyms outside operating hours?",
+    question: "Can you service gyms outside operating hours?",
     answer:
-      "Yes. Gym and fitness facility cleans can be scheduled around member traffic, class timetables and opening hours.",
+      "Yes. Fitness and training facility cleaning can be carried out outside operating hours where required, and is fully coordinated around class timetables, member traffic, and facility access requirements.",
   },
   {
-    question: "Do you offer recurring contracts?",
+    question: "Do you offer ongoing or recurring contracts?",
     answer:
-      "Yes. Post-construction and commercial gym contracts are core services, with strata and end-of-lease work available as supplementary recurring services.",
+      "Yes. We provide contract and recurring cleaning across post-construction, commercial fitness facilities, strata, and end-of-lease properties.",
   },
   {
-    question: "How do you price cleaning work?",
+    question: "How do you quote cleaning projects?",
     answer:
-      "Pricing depends on site size, scope, access, condition, deadline and whether the service is one-off or recurring. We provide a clear quote before work begins.",
+      "Pricing is based on site size, scope, access, condition, and timeframe, as well as whether the work is one-off or ongoing. A detailed quote is provided before any work commences.",
   },
 ];
 
 export const footerLinks = {
-  Services: ["Post-Construction", "Gym Facility Cleaning", "Strata Cleaning", "End of Lease"],
+  Services: ["Post-Construction Cleaning", "Fitness Facility Cleaning", "Strata Cleaning", "End of Lease Cleaning"],
   Company: ["Projects", "Process", "Service Areas", "FAQ"],
 };
 
@@ -245,7 +245,7 @@ export const seoSchemas = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: business.name,
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=84",
+    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1200",
     telephone: business.phone,
     email: business.email,
     address: {

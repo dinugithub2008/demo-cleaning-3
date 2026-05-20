@@ -1,16 +1,18 @@
-import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 import { business } from "@/data/siteContent";
 
 export function Logo() {
   return (
-    <a aria-label={`${business.name} home`} className="flex items-center gap-2" href="#">
-      <span className="grid size-10 place-items-center rounded-full bg-[#ec1f72] text-white shadow-lg shadow-pink-700/20">
-        <CheckCircle2 className="size-5" />
-      </span>
-      <span className="text-xl font-black tracking-normal text-[#071827]">
-        {business.name.slice(0, 5)}
-        <span className="text-[#0877c9]">{business.name.slice(5)}</span>
-      </span>
+    <a aria-label={`${business.name} home`} className="relative block size-20 shrink-0 overflow-hidden rounded-lg bg-black shadow-lg shadow-pink-700/20 sm:size-24" href="#">
+      <Image
+        alt=""
+        aria-hidden="true"
+        className="object-contain"
+        fill
+        priority
+        sizes="(min-width: 640px) 96px, 80px"
+        src="/clear-site-co-logo-tagline.png"
+      />
     </a>
   );
 }

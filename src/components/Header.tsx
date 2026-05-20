@@ -20,10 +20,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/94 backdrop-blur-xl">
-      <div className="container-x flex min-h-18 items-center justify-between gap-5 py-3">
+      <div className="container-x flex min-h-[6.5rem] items-center justify-between gap-4 py-2 sm:min-h-28">
         <Logo />
 
-        <nav aria-label="Primary navigation" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label="Primary navigation" className="hidden items-center gap-5 lg:flex xl:gap-7">
           {navItems.map((item) => (
             <a className="text-sm font-bold text-slate-700 transition hover:text-[#ec1f72]" href={item.href} key={item.label}>
               {item.label}
@@ -31,7 +31,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 xl:gap-3 lg:flex">
           <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2 py-1 shadow-sm">
             {contactActions.map((action) => {
               const Icon = action.icon;

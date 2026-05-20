@@ -12,17 +12,17 @@ const aboutValues = [
   {
     icon: CalendarCheck,
     title: "Deadline Aware",
-    text: "Cleaning is planned around handover dates, gym opening hours, inspections and property access windows.",
+    text: "Cleaning is coordinated around handover dates, operating hours, inspections and property access windows.",
   },
   {
     icon: ShieldCheck,
     title: "Site-Safe Teams",
-    text: "Teams are briefed for active construction, commercial fitness and managed property environments.",
+    text: "Teams are briefed for active construction sites, commercial fitness facilities and managed property environments, with a focus on safety and site compliance.",
   },
   {
     icon: Sparkles,
     title: "Presentation Focused",
-    text: "Dust, debris, amenities, surfaces and final details are handled so the space is ready for its next use.",
+    text: "Dust, debris, amenities, fixtures and final details are managed so the space is ready for its next stage.",
   },
 ];
 
@@ -32,16 +32,16 @@ export function AboutUs() {
       <div className="container-x">
         <SectionHeading
           eyebrow="About us"
-          title="We make site handovers, openings and property cleans easier to manage"
-          text="ClearSiteCo is built for practical cleaning work where the finish matters: post-construction sites, commercial gym facilities, strata common areas and end-of-lease handovers."
+          title="We help manage site handovers and property cleans with flexible scheduling, clear site coordination and delivery to tight project deadlines."
+          text="Clear Site Co. is built for high-detail cleaning work where presentation and finish matter: post-construction sites, commercial gym facilities, strata common areas and end-of-lease handovers."
         />
 
         <div className="mt-12 grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative">
             <img
               alt="ClearSiteCo cleaner preparing a commercial space for handover"
-              className="h-[420px] w-full rounded-[2rem] object-cover soft-shadow"
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=84"
+              className="h-[460px] w-full rounded-[2rem] object-cover soft-shadow"
+              src="https://images.pexels.com/photos/9462761/pexels-photo-9462761.jpeg?auto=compress&cs=tinysrgb&w=1100"
             />
             <div className="absolute -bottom-6 right-5 rounded-3xl bg-white px-5 py-4 shadow-2xl shadow-slate-950/15">
               <div className="flex items-center gap-3">
@@ -58,13 +58,13 @@ export function AboutUs() {
 
           <div>
             <p className="text-2xl font-black leading-snug text-[#071827] sm:text-3xl">
-              We combine clear scopes, reliable scheduling and detail-led cleaning so builders, facility managers and property teams can hand over with confidence.
+              We combine clear scopes, reliable scheduling and detail-led cleaning to support smooth handovers for builders, facility managers and property teams.
             </p>
             <p className="mt-5 leading-7 text-slate-600">
-              Every job starts with the site type, access, deadline and presentation standard. From fine dust and builder residue to high-touch gym zones and strata common areas, the work is planned around what the space needs to become next.
+              Every job is planned around the scope of work, access requirements, project deadlines and the required presentation standard. From construction residue to high-touch commercial and strata spaces, the work is coordinated around what the site needs to be ready for next.
             </p>
             <p className="mt-4 leading-7 text-slate-600">
-              Our focus stays intentionally simple: post-construction cleaning, commercial gym cleaning, and strata or end-of-lease support across Sydney.
+              We specialise in post-construction cleaning, commercial fitness facilities cleaning, and strata and end-of-lease support across Sydney.
             </p>
             <CTAButton className="mt-7" href="#quote-form" variant="secondary">Discuss Your Site</CTAButton>
           </div>

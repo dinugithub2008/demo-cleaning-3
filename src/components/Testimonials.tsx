@@ -8,8 +8,8 @@ export function Testimonials() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Client reviews"
-          title="Trusted by site managers, gyms and property teams"
-          text="The work is judged by readiness: ready for handover, ready for members, ready for tenants and inspections."
+          title="Trusted by site managers, commercial fitness facilities and property teams"
+          text="The work is judged by readiness: handover, members, tenants and inspections"
         />
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {testimonials.map((review) => (

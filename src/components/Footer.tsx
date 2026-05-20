@@ -21,14 +21,14 @@ const socialStyles = {
 export function Footer() {
   return (
     <footer className="bg-white pb-8">
-      <div className="container-x tile-grid overflow-hidden rounded-[2rem] p-8 text-white lg:p-12">
+      <div className="container-x tile-grid overflow-hidden rounded-[2rem] p-8 text-white lg:p-10">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div>
             <div className="inline-flex rounded-2xl bg-white p-3">
               <Logo />
             </div>
             <p className="mt-6 max-w-sm text-sm font-semibold leading-7 text-white/82">
-              Specialist post-construction, commercial gym, strata and end-of-lease cleaning across Sydney. Scoped clearly, delivered carefully.
+              Specialist post-construction, commercial fitness facility, strata, and end-of-lease cleaning across Sydney. Clearly scoped and professionally delivered.
             </p>
             <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => {
@@ -67,7 +67,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-16 flex flex-col gap-4 border-t border-white/14 pt-6 text-xs font-semibold text-white/70 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-4 border-t border-white/14 pt-5 text-xs font-semibold text-white/70 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 ClearSiteCo. All rights reserved.</p>
           <div className="flex gap-5">
             <a href="#">Privacy Policy</a>
