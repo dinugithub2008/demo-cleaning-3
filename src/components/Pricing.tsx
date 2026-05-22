@@ -41,8 +41,12 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <CTAButton className="mt-8 w-full" href="#quote-form" variant={plan.featured ? "light" : "primary"}>
-                  Request a Scoped Quote
+                <CTAButton
+                  className="mt-8 min-h-10 max-w-full px-5 py-2.5 text-xs leading-tight sm:text-sm"
+                  href="#quote-form"
+                  variant={plan.featured ? "light" : "primary"}
+                >
+                  Request a Quote
                 </CTAButton>
               </article>
             ))}
