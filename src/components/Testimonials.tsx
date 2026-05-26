@@ -4,7 +4,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Testimonials() {
   return (
-    <section className="section-pad bg-slate-50" id="reviews">
+    <section className="section-pad bg-[#f4eee9]" id="reviews">
       <div className="container-x">
         <SectionHeading
           eyebrow="Client reviews"
@@ -24,7 +24,7 @@ export function Testimonials() {
               </blockquote>
               <div className="mt-7 border-t border-slate-100 pt-5">
                 <p className="font-black text-slate-950">{review.name}</p>
-                <p className="text-sm font-semibold text-[#0877c9]">{review.location}</p>
+                <p className="text-sm font-semibold text-[#6f584d]">{review.location}</p>
               </div>
             </article>
           ))}

@@ -30,7 +30,7 @@ export function FinalCTA() {
   }, []);
 
   const fieldClass =
-    "min-h-12 w-full rounded-2xl border border-slate-200 bg-white px-4 text-sm font-semibold text-[#071827] outline-none transition placeholder:text-slate-400 focus:border-[#0877c9] focus:ring-4 focus:ring-[#0877c9]/12";
+    "min-h-12 w-full rounded-2xl border border-slate-200 bg-white px-4 text-sm font-semibold text-[#171313] outline-none transition placeholder:text-slate-400 focus:border-[#ec1f72] focus:ring-4 focus:ring-[#ec1f72]/12";
 
   return (
     <section className="bg-white pb-16" id="quote">
@@ -46,16 +46,16 @@ export function FinalCTA() {
                 Provide the site type, location, timeframe, and scope, and we’ll recommend the appropriate cleaning solution for construction, fitness facilities, strata, or vacate projects.
               </p>
               <a
-                className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-[#071827] px-6 py-3 text-sm font-black text-white shadow-lg shadow-slate-950/20 transition hover:brightness-110"
+                className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-[#171313] px-6 py-3 text-sm font-black text-white shadow-lg shadow-slate-950/20 transition hover:brightness-110"
                 href={business.phoneHref}
               >
-                <Phone className="size-4 text-[#2ac8d4]" />
+                <Phone className="size-4 text-[#d8c4a6]" />
                 Call Now
               </a>
             </div>
             <form
               action={`mailto:${business.email}`}
-              className="rounded-[1.5rem] bg-white p-5 text-[#071827] shadow-2xl shadow-slate-950/20 sm:p-6"
+              className="rounded-[1.5rem] bg-white p-5 text-[#171313] shadow-2xl shadow-slate-950/20 sm:p-6"
               encType="text/plain"
               id="quote-form"
               method="post"
@@ -85,7 +85,7 @@ export function FinalCTA() {
                     aria-haspopup="listbox"
                     aria-invalid={serviceError}
                     className={`${fieldClass} flex items-center justify-between gap-3 text-left ${
-                      serviceError ? "border-[#ec1f72] ring-4 ring-[#ec1f72]/12" : serviceOpen ? "border-[#0877c9] ring-4 ring-[#0877c9]/12" : ""
+                      serviceError ? "border-[#ec1f72] ring-4 ring-[#ec1f72]/12" : serviceOpen ? "border-[#ec1f72] ring-4 ring-[#ec1f72]/12" : ""
                     } ${service ? "" : "text-slate-400"}`}
                     id="quote-service"
                     onKeyDown={(event) => {
@@ -105,7 +105,7 @@ export function FinalCTA() {
                     type="button"
                   >
                     <span className="truncate">{service || "Type of service*"}</span>
-                    <ChevronDown className={`size-4 shrink-0 text-[#0877c9] transition ${serviceOpen ? "rotate-180" : ""}`} />
+                    <ChevronDown className={`size-4 shrink-0 text-[#6f584d] transition ${serviceOpen ? "rotate-180" : ""}`} />
                   </button>
                   {serviceOpen ? (
                     <div
@@ -119,7 +119,7 @@ export function FinalCTA() {
                           <button
                             aria-selected={selected}
                             className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-xl px-3 text-left text-sm font-bold transition ${
-                              selected ? "bg-[#edf7ff] text-[#075f9f]" : "text-slate-700 hover:bg-slate-50 hover:text-[#071827]"
+                              selected ? "bg-[#fff0f6] text-[#6f584d]" : "text-slate-700 hover:bg-[#f4eee9] hover:text-[#171313]"
                             }`}
                             key={option}
                             onClick={() => {

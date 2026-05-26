@@ -5,7 +5,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Pricing() {
   return (
-    <section className="section-pad bg-[#eaf5ff]" id="pricing">
+    <section className="section-pad bg-[#fff0f6]" id="pricing">
       <div className="container-x">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
@@ -25,18 +25,18 @@ export function Pricing() {
             {packages.map((plan) => (
               <article
                 className={`rounded-[1.5rem] p-6 ${
-                  plan.featured ? "bg-[#071827] text-white shadow-2xl shadow-slate-950/20" : "bg-white text-[#071827] shadow-sm shadow-slate-950/5"
+                  plan.featured ? "bg-[#171313] text-white shadow-2xl shadow-slate-950/20" : "bg-white text-[#171313] shadow-sm shadow-slate-950/5"
                 }`}
                 key={plan.name}
               >
-                <p className={`text-xs font-black uppercase tracking-[0.16em] ${plan.featured ? "text-[#2ac8d4]" : "text-[#ec1f72]"}`}>{plan.eyebrow}</p>
+                <p className={`text-xs font-black uppercase tracking-[0.16em] ${plan.featured ? "text-[#d8c4a6]" : "text-[#ec1f72]"}`}>{plan.eyebrow}</p>
                 <h3 className="mt-4 text-2xl font-black">{plan.name}</h3>
                 <p className={`mt-3 text-sm leading-6 ${plan.featured ? "text-white/82" : "text-slate-600"}`}>{plan.text}</p>
                 <p className="mt-7 text-3xl font-black">{plan.price}</p>
                 <ul className="mt-7 grid gap-3">
                   {plan.features.map((feature) => (
                     <li className="flex items-start gap-2 text-sm font-semibold" key={feature}>
-                      <CheckCircle2 className={`mt-0.5 size-4 shrink-0 ${plan.featured ? "text-[#2ac8d4]" : "text-[#0877c9]"}`} />
+                      <CheckCircle2 className={`mt-0.5 size-4 shrink-0 ${plan.featured ? "text-[#d8c4a6]" : "text-[#6f584d]"}`} />
                       {feature}
                     </li>
                   ))}
@@ -46,7 +46,7 @@ export function Pricing() {
                   href="#quote-form"
                   variant={plan.featured ? "light" : "primary"}
                 >
-                  Request a Quote
+                  Request Quote
                 </CTAButton>
               </article>
             ))}

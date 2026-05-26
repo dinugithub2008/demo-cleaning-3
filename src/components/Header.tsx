@@ -8,7 +8,7 @@ import { CTAButton } from "./CTAButton";
 import { Logo } from "./Logo";
 
 const contactActions = [
-  { label: "Call ClearSiteCo", href: business.phoneHref, icon: Phone, className: "text-[#0877c9]" },
+  { label: "Call ClearSiteCo", href: business.phoneHref, icon: Phone, className: "text-[#6f584d]" },
   { label: "Email ClearSiteCo", href: `mailto:${business.email}`, icon: Mail, className: "text-[#ec1f72]" },
   { label: "Message ClearSiteCo on WhatsApp", href: business.whatsappHref, icon: WhatsAppIcon, className: "text-[#25d366]" },
   { label: "Follow ClearSiteCo on Instagram", href: business.instagramHref, icon: InstagramIcon, className: "text-[#dd2a7b]" },
@@ -38,7 +38,7 @@ export function Header() {
               return (
                 <a
                   aria-label={action.label}
-                  className={`grid size-10 place-items-center rounded-full transition hover:bg-[#edf7ff] hover:text-[#071827] ${action.className}`}
+                  className={`grid size-10 place-items-center rounded-full transition hover:bg-[#fff0f6] hover:text-[#171313] ${action.className}`}
                   href={action.href}
                   key={action.label}
                 >
@@ -67,7 +67,7 @@ export function Header() {
           return (
             <a
               aria-label={action.label}
-              className={`inline-flex min-h-10 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm transition hover:bg-[#edf7ff] hover:text-[#071827] ${action.className}`}
+              className={`inline-flex min-h-10 items-center justify-center rounded-full border border-slate-200 bg-white shadow-sm transition hover:bg-[#fff0f6] hover:text-[#171313] ${action.className}`}
               href={action.href}
               key={action.label}
             >
@@ -97,7 +97,7 @@ export function Header() {
                 href={business.phoneHref}
                 onClick={() => setOpen(false)}
               >
-                <Phone className="size-4 text-[#0877c9]" />
+                <Phone className="size-4 text-[#6f584d]" />
                 Call Now
               </a>
             </div>

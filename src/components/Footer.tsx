@@ -68,7 +68,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 flex flex-col gap-4 border-t border-white/14 pt-5 text-xs font-semibold text-white/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 ClearSiteCo. All rights reserved.</p>
+          <p>© 2026 Clear Site Co. All rights reserved.</p>
           <div className="flex gap-5">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

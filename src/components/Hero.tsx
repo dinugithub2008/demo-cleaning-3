@@ -10,15 +10,15 @@ export function Hero() {
         <div className="tile-grid relative overflow-hidden rounded-[2rem] px-5 py-8 text-white soft-shadow sm:px-8 lg:min-h-[650px] lg:px-12 lg:py-12">
           <div className="relative z-10 flex h-full flex-col justify-between">
             <div>
-              <div className="mb-7 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-black text-[#071827] shadow-lg">
+              <div className="mb-7 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-black text-[#171313] shadow-lg">
                 <ShieldCheck className="size-4 text-[#ec1f72]" />
                 Post-construction and commercial cleaning specialists
               </div>
-              <h1 className="max-w-4xl text-balance text-5xl font-black leading-[0.95] sm:text-6xl lg:text-7xl">
+              <h1 className="font-display max-w-4xl text-balance text-6xl font-bold leading-[0.9] sm:text-7xl lg:text-8xl">
                 Site-ready cleaning for handovers, gyms and strata properties.
               </h1>
               <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-white/88">
-                ClearSiteCo delivers detailed builders cleans, commercial gym facility cleaning, strata cleaning and vacate handovers across Sydney.
+                Clear Site Co. delivers detailed builders cleans, commercial gym facility cleaning, strata cleaning and vacate handovers across Sydney.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <CTAButton href="#quote-form">Request Site Quote</CTAButton>
@@ -47,7 +47,7 @@ export function Hero() {
         {projectTypes.map((type) => {
           const Icon = type.icon;
           return (
-            <div className="flex items-center gap-2 rounded-2xl bg-slate-50 px-3 py-3 text-sm font-black text-slate-800" key={type.label}>
+            <div className="flex items-center gap-2 rounded-2xl bg-[#fff0f6] px-3 py-3 text-sm font-black text-[#342927]" key={type.label}>
               <Icon className="size-4 shrink-0 text-[#ec1f72]" />
               {type.label}
             </div>

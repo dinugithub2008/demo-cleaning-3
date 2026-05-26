@@ -49,7 +49,7 @@ export function AboutUs() {
                   <BadgeCheck className="size-6" />
                 </span>
                 <div>
-                  <p className="text-2xl font-black text-[#0877c9]">4.9</p>
+                  <p className="text-2xl font-black text-[#6f584d]">4.9</p>
                   <p className="text-xs font-bold uppercase text-slate-500">client rating</p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export function AboutUs() {
           </div>
 
           <div>
-            <p className="text-2xl font-black leading-snug text-[#071827] sm:text-3xl">
+            <p className="font-display text-3xl font-bold leading-snug text-[#171313] sm:text-4xl">
               We combine clear scopes, reliable scheduling and detail-led cleaning to support smooth handovers for builders, facility managers and property teams.
             </p>
             <p className="mt-5 leading-7 text-slate-600">
@@ -72,8 +72,8 @@ export function AboutUs() {
 
         <div className="mt-16 grid gap-4 md:grid-cols-3">
           {aboutStats.map((stat) => (
-            <div className="rounded-[1.4rem] border border-slate-200 bg-[#f7fbff] p-6" key={stat.label}>
-              <p className="text-4xl font-black text-[#0877c9]">{stat.value}</p>
+            <div className="rounded-[1.4rem] border border-[#e6d9d1] bg-[#f4eee9] p-6" key={stat.label}>
+              <p className="text-4xl font-black text-[#6f584d]">{stat.value}</p>
               <p className="mt-2 text-sm font-black uppercase leading-5 text-slate-600">{stat.label}</p>
             </div>
           ))}
@@ -83,12 +83,12 @@ export function AboutUs() {
           {aboutValues.map((item) => {
             const Icon = item.icon;
             return (
-              <article className="grid gap-4 rounded-[1.4rem] bg-[#edf7ff] p-6 sm:grid-cols-[220px_1fr] sm:items-center" key={item.title}>
+              <article className="grid gap-4 rounded-[1.4rem] bg-[#fff0f6] p-6 sm:grid-cols-[220px_1fr] sm:items-center" key={item.title}>
                 <div className="flex items-center gap-4">
-                  <span className="grid size-12 place-items-center rounded-2xl bg-white text-[#0877c9] shadow-sm">
+                  <span className="grid size-12 place-items-center rounded-2xl bg-white text-[#6f584d] shadow-sm">
                     <Icon className="size-6" />
                   </span>
-                  <h3 className="text-lg font-black text-[#071827]">{item.title}</h3>
+                  <h3 className="text-lg font-black text-[#171313]">{item.title}</h3>
                 </div>
                 <p className="leading-7 text-slate-600">{item.text}</p>
               </article>

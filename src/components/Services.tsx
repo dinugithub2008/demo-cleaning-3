@@ -24,21 +24,21 @@ export function Services() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <img
-                    alt={`${service.title} by ClearSiteCo`}
+                    alt={`${service.title} by Clear Site Co.`}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     src={service.image}
                   />
-                  <span className="absolute left-5 top-5 grid size-14 place-items-center rounded-2xl bg-white text-[#0877c9] shadow-lg">
+                  <span className="absolute left-5 top-5 grid size-14 place-items-center rounded-2xl bg-white text-[#6f584d] shadow-lg">
                     <Icon className="size-7" />
                   </span>
                 </div>
                 <div className="p-6">
                   <p className="text-xs font-black uppercase tracking-[0.14em] text-[#ec1f72]">{service.subtitle}</p>
-                  <h3 className="mt-3 text-2xl font-black text-[#071827]">{service.title}</h3>
+                  <h3 className="font-display mt-3 text-3xl font-bold text-[#171313]">{service.title}</h3>
                   <p className="mt-4 leading-7 text-slate-600">{service.text}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {service.tags.map((tag) => (
-                      <span className="rounded-full bg-[#edf7ff] px-3 py-2 text-xs font-black text-[#075f9f]" key={tag}>
+                      <span className="rounded-full bg-[#fff0f6] px-3 py-2 text-xs font-black text-[#6f584d]" key={tag}>
                         {tag}
                       </span>
                     ))}

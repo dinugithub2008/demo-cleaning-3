@@ -16,12 +16,12 @@ export function CTAButton({ children, href, variant = "primary", className = "",
       style: { backgroundColor: "#ec1f72", color: "#ffffff", border: "1px solid #ec1f72" },
     },
     secondary: {
-      className: "shadow-lg shadow-blue-700/20 hover:brightness-95",
-      style: { backgroundColor: "#0877c9", color: "#ffffff", border: "1px solid #0877c9" },
+      className: "shadow-lg shadow-stone-950/20 hover:brightness-110",
+      style: { backgroundColor: "#171313", color: "#ffffff", border: "1px solid #171313" },
     },
     light: {
       className: "shadow-lg shadow-slate-950/10 hover:brightness-95",
-      style: { backgroundColor: "#ffffff", color: "#071827", border: "1px solid rgba(7, 24, 39, 0.12)" },
+      style: { backgroundColor: "#ffffff", color: "#171313", border: "1px solid rgba(23, 19, 19, 0.12)" },
     },
   };
 

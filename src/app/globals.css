@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #071827;
-  --brand-blue: #0877c9;
-  --brand-navy: #07233a;
-  --brand-cyan: #2ac8d4;
+  --background: #fffafc;
+  --foreground: #171313;
+  --brand-charcoal: #171313;
+  --brand-mocha: #6f584d;
+  --brand-taupe: #f4eee9;
+  --brand-chrome: #d9d9dd;
+  --brand-champagne: #d8c4a6;
   --brand-pink: #ec1f72;
-  --soft-blue: #edf7ff;
+  --brand-blush: #fff0f6;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -40,25 +42,31 @@ a {
 }
 
 .tile-grid {
-  background-color: #0877c9;
+  background-color: #171313;
   background-image:
-    linear-gradient(rgba(2, 42, 72, 0.26) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(2, 42, 72, 0.26) 1px, transparent 1px),
-    radial-gradient(circle at 50% 30%, rgba(42, 200, 212, 0.72), rgba(8, 119, 201, 0.26) 36%, transparent 62%);
+    linear-gradient(rgba(255, 240, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 240, 246, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 20% 0%, rgba(236, 31, 114, 0.34), transparent 36%),
+    radial-gradient(circle at 80% 18%, rgba(216, 196, 166, 0.3), transparent 34%),
+    linear-gradient(135deg, #171313 0%, #2a2220 46%, #6f584d 100%);
   background-size: 62px 62px, 62px 62px, 100% 100%;
 }
 
 .pink-grid {
   background-color: #ec1f72;
   background-image:
-    linear-gradient(rgba(132, 20, 73, 0.22) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(132, 20, 73, 0.22) 1px, transparent 1px),
-    radial-gradient(circle at 70% 40%, rgba(255, 221, 91, 0.38), transparent 34%);
+    linear-gradient(rgba(255, 240, 246, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 240, 246, 0.2) 1px, transparent 1px),
+    radial-gradient(circle at 70% 40%, rgba(216, 196, 166, 0.42), transparent 34%);
   background-size: 62px 62px, 62px 62px, 100% 100%;
 }
 
 .soft-shadow {
-  box-shadow: 0 22px 70px rgba(7, 24, 39, 0.12);
+  box-shadow: 0 24px 80px rgba(23, 19, 19, 0.14);
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
 }
 
 .angled-card {

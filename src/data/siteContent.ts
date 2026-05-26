@@ -20,7 +20,7 @@ export const business = {
   email: "info@clearsiteco.com.au",
   whatsappHref: "https://wa.me/61466582296",
   instagramHref: "https://www.instagram.com/clearsiteco_?igsh=ZnBxaTBmdzd3bTNh",
-  facebookHref: "https://www.facebook.com/",
+  facebookHref: "https://www.facebook.com/share/1JYnHNLZmK/?mibextid=wwXIfr",
   address: "Sydney NSW",
   hours: "Mon-Sat 7:00am-7:00pm",
   rating: "4.9",
@@ -45,12 +45,12 @@ export const heroSlides = [
   {
     title: "Post-construction handover cleans",
     text: "Post-construction cleaning for residential and commercial projects, specialising in builders cleans, defect-sensitive finishing and residue removal, and final handover presentation cleaning.",
-    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    image: "https://images.pexels.com/photos/34823910/pexels-photo-34823910.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
   {
     title: "Commercial facility presentation",
     text: "Clean, polished commercial spaces ready for staff, clients and inspections.",
-    image: "https://images.pexels.com/photos/33357392/pexels-photo-33357392.png?auto=compress&cs=tinysrgb&w=1400",
+    image: "https://images.pexels.com/photos/34823913/pexels-photo-34823913.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
   {
     title: "Gym and fitness cleaning",
@@ -60,7 +60,7 @@ export const heroSlides = [
   {
     title: "Strata and lease handovers",
     text: "Common areas, vacate cleans and property presentation handled with practical detail.",
-    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    image: "https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
 ];
 
@@ -68,7 +68,7 @@ export const heroServiceTiles = [
   {
     title: "Builders cleans",
     text: "Residential, commercial and industrial post-construction projects.",
-    image: "https://images.pexels.com/photos/4176414/pexels-photo-4176414.jpeg?auto=compress&cs=tinysrgb&w=900",
+    image: "https://images.pexels.com/photos/11875897/pexels-photo-11875897.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     title: "Gym contracts",
@@ -78,7 +78,7 @@ export const heroServiceTiles = [
   {
     title: "Property handovers",
     text: "Strata common areas, vacate cleans and inspection-ready finishes.",
-    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=900",
+    image: "https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
 ];
 
@@ -95,7 +95,7 @@ export const primaryServices = [
     title: "Post-Construction Cleaning",
     subtitle: "Residential, commercial and industrial sites",
     text: "Detailed builders cleans, handover cleans, debris removal, fine construction dust extraction and final presentation cleaning for site-ready handovers.",
-    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://images.pexels.com/photos/34823910/pexels-photo-34823910.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Builders cleans", "Handover cleans", "Post-construction cleaning"],
   },
   {
@@ -111,7 +111,7 @@ export const primaryServices = [
     title: "Strata & End of Lease Cleaning",
     subtitle: "Strata properties, common areas and end-of-lease cleans.",
     text: "Reliable cleaning for strata properties, common areas, end-of-lease cleans and property handovers with a focus on detail and presentation.",
-    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Common areas", "Vacate cleans", "Presentation"],
   },
 ];
@@ -245,7 +245,7 @@ export const seoSchemas = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: business.name,
-    image: "https://images.pexels.com/photos/6197108/pexels-photo-6197108.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "https://images.pexels.com/photos/34823910/pexels-photo-34823910.jpeg?auto=compress&cs=tinysrgb&w=1200",
     telephone: business.phone,
     email: business.email,
     address: {
